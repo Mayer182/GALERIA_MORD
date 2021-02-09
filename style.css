@@ -1,0 +1,109 @@
+body {
+    background-image: url("IMG/FONDO1.png");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Segoe UI';
+    color: rgb(0, 0, 0);
+    margin: 50px 0px;
+    display: block;
+    text-align: center;
+    font-size: 80px;
+    text-shadow: 0 0 20px #ffffff;
+}
+h2{
+    font-family: 'Segoe UI';
+    color: black;
+    margin: 50px 50px;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 0 0 20px rgb(248, 248, 248);
+}
+
+#fotos {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#container:after {
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#container div {
+    width: 28%;
+    height: auto;
+    -webkit-transition: -webkit-transform: 1s;
+    display: inline;
+    float: left;
+    margin: 0px 3% 0 0;
+    padding-left: 30px;
+ }
+
+#container div img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px #666;
+    border: 5px solid #FFF;
+}
+
+img{
+    width: 350px;
+    height: 200px;
+}
+
+#container div img~span{
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    margin: 0px;
+    padding: 2px 5px;
+    color:  #FFF;
+    background: rgba(0,0,0,0.7);
+    box-shadow: 0 0 10px #666;
+    text-align: center;
+}
+
+#container div img:hover+span{
+    opacity: 1;
+} 
+
+#container:hover div{
+    opacity: 0.2;
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+#container:hover div:hover{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+section.music{
+    width: 80%;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media screen and (max-width: 700){
+    .container{
+        width: 90%;
+    }
+}
+
